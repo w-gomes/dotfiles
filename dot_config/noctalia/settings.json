@@ -24,9 +24,9 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 0.2,
+        "backgroundOpacity": 0.5,
         "capsuleOpacity": 1,
-        "density": "default",
+        "density": "compact",
         "exclusive": true,
         "floating": false,
         "marginHorizontal": 0.25,
@@ -35,7 +35,7 @@
         ],
         "outerCorners": false,
         "position": "top",
-        "showCapsule": true,
+        "showCapsule": false,
         "widgets": {
             "center": [
                 {
@@ -166,7 +166,7 @@
                 "id": "timer-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "weather-card"
             }
         ]
@@ -191,7 +191,7 @@
                 "id": "profile-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "shortcuts-card"
             },
             {
@@ -199,7 +199,7 @@
                 "id": "audio-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "weather-card"
             },
             {
@@ -286,7 +286,7 @@
         "showWeekNumberInCalendar": false,
         "use12hourFormat": false,
         "useFahrenheit": false,
-        "weatherEnabled": true,
+        "weatherEnabled": false,
         "weatherShowEffects": true
     },
     "network": {
@@ -302,7 +302,7 @@
         "nightTemp": "4000"
     },
     "notifications": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.8,
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
         "enabled": true,
@@ -350,6 +350,21 @@
                 "enabled": true
             },
             {
+                "action": "logout",
+                "countdownEnabled": true,
+                "enabled": true
+            },
+            {
+                "action": "reboot",
+                "countdownEnabled": true,
+                "enabled": true
+            },
+            {
+                "action": "shutdown",
+                "countdownEnabled": true,
+                "enabled": true
+            },
+            {
                 "action": "suspend",
                 "countdownEnabled": false,
                 "enabled": false
@@ -358,21 +373,6 @@
                 "action": "hibernate",
                 "countdownEnabled": false,
                 "enabled": false
-            },
-            {
-                "action": "reboot",
-                "countdownEnabled": true,
-                "enabled": true
-            },
-            {
-                "action": "logout",
-                "countdownEnabled": true,
-                "enabled": true
-            },
-            {
-                "action": "shutdown",
-                "countdownEnabled": true,
-                "enabled": true
             }
         ],
         "showHeader": true
@@ -421,7 +421,7 @@
     "ui": {
         "fontDefault": "Hack Nerd Font Mono",
         "fontDefaultScale": 1,
-        "fontFixed": "Monospace",
+        "fontFixed": "JetBrainsMono Nerd Font Mono",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
