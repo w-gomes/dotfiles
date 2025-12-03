@@ -1,0 +1,147 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  // Clear out a few defaults
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-h": null,
+      "ctrl-w": null
+    }
+  },
+
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "f2": null
+    }
+  },
+
+  {
+    "context": "Pane",
+    "bindings": {
+      "f3": null,
+      "shift-f3": null
+    }
+  },
+
+  // Global leader key
+  {
+    "context": "(Workspace && !Editor && !Terminal) || (Editor && VimControl)",
+    "bindings": {
+      "space space": "tab_switcher::ToggleAll", // Works like :ls
+      "space f f": "file_finder::Toggle",
+      "space f n": "workspace::NewFile",
+
+      // Split panels
+      // Splits a different tab. If you want to split and clone a tab, use vim.
+      // E.g. :vs or :vp
+      "space s h": "pane::SplitAndMoveDown",
+      "space s v": "pane::SplitAndMoveRight",
+
+      // Join panels
+      "space j f": "pane::JoinIntoNext",
+      "space j a": "pane::JoinAll",
+
+      // :w and :wa
+      "space w": "workspace::Save",
+      "space w a": "workspace::SaveAll"
+    }
+  },
+
+  // Window Navigations
+  {
+    "context": "ProjectPanel || (Workspace && !menu && !(Picker > Editor))",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      "f2": "workspace::ToggleLeftDock",
+      "f3": "file_finder::Toggle"
+    }
+  },
+
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f3": "file_finder::Toggle"
+    }
+  },
+
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      "f3": "file_finder::Toggle",
+      "shift-f3": "workspace::NewFile"
+    }
+  },
+
+  // Vim Editor
+  {
+    "context": "Editor && VimControl && !menu",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-j": "workspace::ActivatePaneDown",
+
+      "ctrl-shift-h": "workspace::MovePaneLeft",
+      "ctrl-shift-l": "workspace::MovePaneRight",
+      "ctrl-shift-k": "workspace::MovePaneUp",
+      "ctrl-shift-j": "workspace::MovePaneDown",
+
+      "shift-h": "pane::ActivatePreviousItem",
+      "shift-l": "pane::ActivateNextItem",
+
+      "f2": "workspace::ToggleLeftDock",
+      "f3": "file_finder::Toggle",
+      "shift-f3": "workspace::NewFile"
+    }
+  },
+
+  {
+    "context": "(vim_mode == normal || vim_mode == visual) && !VimCount",
+    "bindings": {
+      "s": "vim::PushSneak",
+      "shift-s": "vim::PushSneakBackward"
+    }
+  },
+
+  {
+    "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
+    "bindings": {
+      // Traditional vim
+      "Q": "vim::AnyQuotes",
+      "B": "vim::AnyBrackets",
+
+      // Mini.ai
+      "q": "vim::MiniQuotes",
+      "b": "vim::MiniBrackets"
+    }
+  },
+
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "v": "editor::SelectLargerSyntaxNode",
+      "V": "editor::SelectSmallerSyntaxNode",
+      "ctrl-s": "vim::PushAddSurrounds",
+      "shift-x": "vim::Exchange"
+    }
+  },
+
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+      "k j": "vim::NormalBefore"
+    }
+  }
+]

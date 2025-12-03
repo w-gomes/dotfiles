@@ -1,0 +1,22 @@
+[core]
+    editor = vim
+[alias]
+    s = status
+    ap = add --patch
+    c = commit
+    cm = commit -m
+    cv = commit --verbose
+    b = branch
+    d = diff
+    dm = diff --minimal
+    dh = diff HEAD
+    ds = diff --stat
+    co = checkout
+    l = log --oneline --decorate
+    lf = log --pretty=oneline --decorate
+    lg = log --graph --oneline --decorate
+    track = add -N
+    all = add -A
+    up = add --update
+[pull]
+    ff = only
