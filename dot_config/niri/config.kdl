@@ -164,9 +164,10 @@ binds {
     MOD+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    CTRL+SHIFT+1                        { screenshot; }
-    CTRL+SHIFT+2                        { screenshot-screen; }
-    CTRL+SHIFT+3                        { screenshot-window; }
+    SHIFT+PRINT                         { screenshot; }
+    CTRL+PRINT                          { screenshot-screen; }
+    ALT+PRINT                           { screenshot-window; }
+    MOD+SHIFT+PRINT                     { spawn "~/apps/custom-screenshot.sh"; }
 
     // ─── Emergency Escape Key ───
     // Use this when a fullscreen app blocks your keybinds.
@@ -220,6 +221,12 @@ binds {
         }
 
         struts {}
+    }
+
+    gestures {
+      hot-corners {
+        off
+      }
     }
 
 // ────────────── Animation Settings ──────────────
