@@ -240,11 +240,11 @@
         }
     },
     "dock": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.6,
         "colorizeIcons": false,
         "displayMode": "auto_hide",
         "enabled": true,
-        "floatingRatio": 1,
+        "floatingRatio": 0.15,
         "monitors": [
         ],
         "onlySameOutput": true,
