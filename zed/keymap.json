@@ -38,11 +38,13 @@
       "space f f": "file_finder::Toggle",
       "space f n": "workspace::NewFile",
 
-      // Split panels
-      // Splits a different tab. If you want to split and clone a tab, use vim.
-      // E.g. :vs or :vp
-      "space s h": "pane::SplitAndMoveDown",
-      "space s v": "pane::SplitAndMoveRight",
+      // Splits panels right or down.
+      "space m v": "pane::SplitAndMoveRight",
+      "space m s": "pane::SplitAndMoveDown",
+
+      // Clones a pane and move right or down.
+      "space v": "pane::SplitRight",
+      "space s": "pane::SplitDown",
 
       // Join panels
       "space j f": "pane::JoinIntoNext",
