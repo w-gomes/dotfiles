@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "minimum_contrast_for_highlights": 0,
   "diagnostics_max_severity": "off",
   "inline_code_actions": false,
   "audio": {
@@ -23,10 +24,10 @@
     "button": true
   },
   "zoomed_padding": true,
-  "seed_search_query_from_cursor": "selection",
+  "seed_search_query_from_cursor": "never",
   "show_wrap_guides": false,
   "confirm_quit": false,
-  "selection_highlight": true,
+  "selection_highlight": false,
   "rounded_selection": true,
   "current_line_highlight": "none",
   "agent_buffer_font_size": 14.0,
@@ -34,7 +35,7 @@
   "use_system_prompts": false,
   "active_pane_modifiers": {
     "border_size": 0.3,
-    "inactive_opacity": 0.6
+    "inactive_opacity": 0.85
   },
   "on_last_window_closed": "quit_app",
   "restore_on_startup": "none",
@@ -228,7 +229,7 @@
       "normal": "block",
       "insert": "bar",
       "replace": "underline",
-      "visual": "hollow"
+      "visual": "block"
     }
   },
   "icon_theme": "Catppuccin Mocha",
