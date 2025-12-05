@@ -48,32 +48,6 @@
             ],
             "left": [
                 {
-                    "icon": "rocket",
-                    "id": "CustomButton",
-                    "leftClickExec": "qs -c noctalia-shell ipc call launcher toggle",
-                    "leftClickUpdateText": false,
-                    "maxTextLength": {
-                        "horizontal": 10,
-                        "vertical": 10
-                    },
-                    "middleClickExec": "",
-                    "middleClickUpdateText": false,
-                    "parseJson": false,
-                    "rightClickExec": "",
-                    "rightClickUpdateText": false,
-                    "textCollapse": "",
-                    "textCommand": "",
-                    "textIntervalMs": 3000,
-                    "textStream": false,
-                    "wheelDownExec": "",
-                    "wheelDownUpdateText": false,
-                    "wheelExec": "",
-                    "wheelMode": "unified",
-                    "wheelUpExec": "",
-                    "wheelUpUpdateText": false,
-                    "wheelUpdateText": false
-                },
-                {
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
@@ -166,7 +140,7 @@
                 "id": "timer-card"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "weather-card"
             }
         ]
@@ -180,7 +154,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "matugenSchemeType": "scheme-fruit-salad",
-        "predefinedScheme": "Kanagawa",
+        "predefinedScheme": "Monochrome",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -199,7 +173,7 @@
                 "id": "audio-card"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "weather-card"
             },
             {
@@ -210,9 +184,6 @@
         "position": "close_to_bar_button",
         "shortcuts": {
             "left": [
-                {
-                    "id": "WiFi"
-                },
                 {
                     "id": "Bluetooth"
                 },
@@ -280,13 +251,13 @@
     "location": {
         "analogClockInCalendar": false,
         "firstDayOfWeek": -1,
-        "name": "Tokyo",
+        "name": "Rio de Janeiro, RJ",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": false,
         "use12hourFormat": false,
         "useFahrenheit": false,
-        "weatherEnabled": false,
+        "weatherEnabled": true,
         "weatherShowEffects": true
     },
     "network": {
@@ -321,7 +292,8 @@
         "enabledTypes": [
             0,
             1,
-            2
+            2,
+            3
         ],
         "location": "top_right",
         "monitors": [
@@ -340,7 +312,7 @@
         "videoSource": "portal"
     },
     "sessionMenu": {
-        "countdownDuration": 10000,
+        "countdownDuration": 5000,
         "enableCountdown": true,
         "position": "center",
         "powerOptions": [
