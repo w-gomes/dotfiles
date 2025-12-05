@@ -77,55 +77,73 @@ binds {
     // ─── Window Movement and Focus ───
     MOD+SHIFT+Q                               { close-window; }
 
-    MOD+LEFT                            { focus-column-left; }
+    // Focus window (same monitor)
+    MOD+K                               { focus-window-up; }
+    MOD+J                               { focus-window-down; }
     MOD+H                               { focus-column-left; }
-    MOD+RIGHT                           { focus-column-right; }
     MOD+L                               { focus-column-right; }
     MOD+UP                              { focus-window-up; }
-    MOD+K                               { focus-window-up; }
     MOD+DOWN                            { focus-window-down; }
-    MOD+J                               { focus-window-down; }
-
-    MOD+CTRL+LEFT                       { move-column-left; }
-    MOD+CTRL+H                          { move-column-left; }
-    MOD+CTRL+RIGHT                      { move-column-right; }
-    MOD+CTRL+L                          { move-column-right; }
-    MOD+CTRL+UP                         { move-window-up; }
-    MOD+CTRL+K                          { move-window-up; }
-    MOD+CTRL+DOWN                       { move-window-down; }
-    MOD+CTRL+J                          { move-window-down; }
+    MOD+LEFT                            { focus-column-left; }
+    MOD+RIGHT                           { focus-column-right; }
 
     MOD+HOME                            { focus-column-first; }
     MOD+END                             { focus-column-last; }
+
+    // Focus monitor
+    MOD+CTRL+LEFT                      { focus-monitor-left; }
+    MOD+CTRL+RIGHT                     { focus-monitor-right; }
+    MOD+CTRL+UP                        { focus-monitor-up; }
+    MOD+CTRL+DOWN                      { focus-monitor-down; }
+    MOD+CTRL+H                         { focus-monitor-left; }
+    MOD+CTRL+L                         { focus-monitor-right; }
+    MOD+CTRL+K                         { focus-monitor-up; }
+    MOD+CTRL+J                         { focus-monitor-down; }
+
+    // Move window (same monitor)
+    MOD+SHIFT+K                          { move-window-up; }
+    MOD+SHIFT+J                          { move-window-down; }
+    MOD+SHIFT+H                          { move-column-left; }
+    MOD+SHIFT+L                          { move-column-right; }
+    MOD+SHIFT+UP                         { move-window-up; }
+    MOD+SHIFT+DOWN                       { move-window-down; }
+    MOD+SHIFT+LEFT                       { move-column-left; }
+    MOD+SHIFT+RIGHT                      { move-column-right; }
+
     MOD+CTRL+HOME                       { move-column-to-first; }
     MOD+CTRL+END                        { move-column-to-last; }
 
-    MOD+SHIFT+LEFT                      { focus-monitor-left; }
-    MOD+SHIFT+RIGHT                     { focus-monitor-right; }
-    MOD+SHIFT+UP                        { focus-monitor-up; }
-    MOD+SHIFT+DOWN                      { focus-monitor-down; }
-
+    // Move window to monitor
     MOD+SHIFT+CTRL+LEFT                 { move-column-to-monitor-left; }
     MOD+SHIFT+CTRL+RIGHT                { move-column-to-monitor-right; }
     MOD+SHIFT+CTRL+UP                   { move-column-to-monitor-up; }
     MOD+SHIFT+CTRL+DOWN                 { move-column-to-monitor-down; }
 
+    MOD+BracketLeft                     { consume-or-expel-window-left; }
+    MOD+BracketRight                    { consume-or-expel-window-right; }
+
+    MOD+Comma                           { consume-window-into-column; }
+    MOD+Period                          { expel-window-from-column; }
+
+    MOD+R                               { switch-preset-column-width; }
+    MOD+CTRL+R                          { switch-preset-window-height; }
+    MOD+SHIFT+R                         { reset-window-height; }
+
     // ─── Workspace Switching ───
+
     MOD+WHEELSCROLLDOWN                 cooldown-ms=150 { focus-workspace-down; }
     MOD+WHEELSCROLLUP                   cooldown-ms=150 { focus-workspace-up; }
+    MOD+Page_Down                       { focus-workspace-down; }
+    MOD+Page_Up                         { focus-workspace-up; }
     MOD+CTRL+WHEELSCROLLDOWN            cooldown-ms=150 { move-column-to-workspace-down; }
     MOD+CTRL+WHEELSCROLLUP              cooldown-ms=150 { move-column-to-workspace-up; }
+    MOD+CTRL+Page_Down                  { move-column-to-workspace-down; }
+    MOD+CTRL+Page_Up                    { move-column-to-workspace-up; }
 
-    MOD+WHEELSCROLLRIGHT                { focus-column-right; }
-    MOD+WHEELSCROLLLEFT                 { focus-column-left; }
-    MOD+CTRL+WHEELSCROLLRIGHT           { move-column-right; }
-    MOD+CTRL+WHEELSCROLLLEFT            { move-column-left; }
+    MOD+SHIFT+Page_Down                 { move-workspace-down; }
+    MOD+SHIFT+Page_Up                   { move-workspace-up; }
 
-    MOD+SHIFT+WHEELSCROLLDOWN           { focus-column-right; }
-    MOD+SHIFT+WHEELSCROLLUP             { focus-column-left; }
-    MOD+CTRL+SHIFT+WHEELSCROLLDOWN      { move-column-right; }
-    MOD+CTRL+SHIFT+WHEELSCROLLUP        { move-column-left; }
-
+    // Switch to workspace (same monitor)
     MOD+1                               { focus-workspace 1; }
     MOD+2                               { focus-workspace 2; }
     MOD+3                               { focus-workspace 3; }
@@ -136,6 +154,7 @@ binds {
     MOD+8                               { focus-workspace 8; }
     MOD+9                               { focus-workspace 9; }
 
+    // Move window to workspace (same monitor)
     MOD+SHIFT+1                          { move-column-to-workspace 1; }
     MOD+SHIFT+2                          { move-column-to-workspace 2; }
     MOD+SHIFT+3                          { move-column-to-workspace 3; }
@@ -149,24 +168,27 @@ binds {
     MOD+TAB                             { focus-workspace-previous; }
 
     // ─── Layout Controls ───
-    MOD+CTRL+F                          { expand-column-to-available-width; }
     MOD+C                               { center-column; }
     MOD+CTRL+C                          { center-visible-columns; }
+    MOD+CTRL+F                          { expand-column-to-available-width; }
+
+    // ─── Modes ───
+    MOD+SPACE                           { toggle-window-floating; }
+    MOD+SHIFT+SPACE                     { switch-focus-between-floating-and-tiling; }
+    MOD+F                               { maximize-column; }
+    MOD+SHIFT+F                         { fullscreen-window; }
+    MOD+T                               { toggle-column-tabbed-display; }
+
+    // Window resize
     MOD+MINUS                           { set-column-width "-10%"; }
     MOD+EQUAL                           { set-column-width "+10%"; }
     MOD+SHIFT+MINUS                     { set-window-height "-10%"; }
     MOD+SHIFT+EQUAL                     { set-window-height "+10%"; }
 
-    // ─── Modes ───
-    MOD+T                               { toggle-window-floating; }
-    MOD+SHIFT+F                         { fullscreen-window; }
-    MOD+F                               { maximize-column; }
-    MOD+W                               { toggle-column-tabbed-display; }
-
     // ─── Screenshots ───
-    SHIFT+PRINT                         { screenshot; }
-    CTRL+PRINT                          { screenshot-screen; }
-    ALT+PRINT                           { screenshot-window; }
+    MOD+CTRL+SHIFT+PRINT                { screenshot; }
+    MOD+CTRL+PRINT                      { screenshot-screen; }
+    MOD+PRINT                           { screenshot-window; }
     MOD+SHIFT+PRINT                     { spawn "~/apps/custom-screenshot.sh"; }
 
     // ─── Emergency Escape Key ───
@@ -175,8 +197,8 @@ binds {
     MOD+ESCAPE                          allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // ─── Exit / Power ───
+    MOD+SHIFT+E                         { quit; }
     CTRL+ALT+DELETE                     { quit; } // Also quits Niri
-    //MOD+SHIFT+P                         { power-off-monitors; } // Turn off screens (useful for OLED or privacy)
     MOD+O                               repeat=false { toggle-overview; }
 }
 
@@ -200,6 +222,8 @@ binds {
     layout {
         gaps 0 // Gap between windows
         center-focused-column "never" // Don’t auto-center focused column
+
+        default-column-display "normal"
 
         preset-column-widths {
             proportion 0.33333
@@ -275,6 +299,11 @@ binds {
     window-rule {
         geometry-corner-radius 4 // Set every window radius to 20
         clip-to-geometry true
+    }
+
+    window-rule {
+        match app-id=r#"firefox$"#
+        open-maximized true
     }
 
 // ────────────── Environment Variables ──────────────
