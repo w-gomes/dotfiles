@@ -31,5 +31,3 @@
 [nvim.files]
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 "nvim/lazy-lock.json" = "~/.config/nvim/lazy-lock.json"
-"nvim/lua/" = "~/.config/nvim/lua/"
-"nvim/pack/" = "~/.config/nvim/pack/"
