@@ -115,7 +115,7 @@ map <F3> :NERDTreeFind<CR>
 map <F4> :UndotreeToggle<CR>
 
 nnoremap <silent> <ESC><ESC> :noh<CR>
-"nnoremap <silent> \\ :noh<CR>
+nnoremap <silent> \\ :noh<CR>
 
 " Disabling arrow keys
 map <up> <nop>
