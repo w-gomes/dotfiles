@@ -31,3 +31,6 @@
 [nvim.files]
 "nvim/init.lua" = "~/.config/nvim/init.lua"
 "nvim/lazy-lock.json" = "~/.config/nvim/lazy-lock.json"
+
+[fastfetch.files]
+"fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
