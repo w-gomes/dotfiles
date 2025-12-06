@@ -39,41 +39,21 @@
         "widgets": {
             "center": [
                 {
-                    "characterCount": 2,
-                    "followFocusedScreen": false,
-                    "hideUnoccupied": false,
-                    "id": "Workspace",
-                    "labelMode": "index"
-                }
-            ],
-            "left": [
-                {
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
                     "useCustomFont": false,
-                    "usePrimaryColor": false
-                },
+                    "usePrimaryColor": true
+                }
+            ],
+            "left": [
                 {
-                    "diskPath": "/",
-                    "id": "SystemMonitor",
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskUsage": false,
-                    "showMemoryAsPercent": false,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": false,
-                    "usePrimaryColor": false
-                },
-                {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "useFixedWidth": false
+                    "characterCount": 2,
+                    "followFocusedScreen": false,
+                    "hideUnoccupied": true,
+                    "id": "Workspace",
+                    "labelMode": "index"
                 },
                 {
                     "hideMode": "hidden",
@@ -87,14 +67,38 @@
                     "showVisualizer": false,
                     "useFixedWidth": false,
                     "visualizerType": "linear"
+                },
+                {
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
+                    "id": "ActiveWindow",
+                    "maxWidth": 145,
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "useFixedWidth": false
                 }
             ],
             "right": [
                 {
+                    "diskPath": "/",
+                    "id": "SystemMonitor",
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskUsage": true,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
+                    "showNetworkStats": false,
+                    "usePrimaryColor": false
+                },
+                {
+                    "id": "Spacer",
+                    "width": 5
+                },
+                {
                     "blacklist": [
                     ],
-                    "colorizeIcons": false,
-                    "drawerEnabled": true,
+                    "colorizeIcons": true,
+                    "drawerEnabled": false,
                     "id": "Tray",
                     "pinned": [
                     ]
@@ -105,7 +109,7 @@
                     "showUnreadBadge": true
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysShow",
                     "id": "Volume"
                 },
                 {
@@ -113,7 +117,7 @@
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
                     "enableColorization": false,
-                    "icon": "noctalia",
+                    "icon": "dots",
                     "id": "ControlCenter",
                     "useDistroLogo": false
                 }
