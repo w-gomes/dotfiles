@@ -1,0 +1,35 @@
+[default.files]
+
+[ghostty.files]
+ghostty = "~/.config/ghostty/config"
+
+[fish.files]
+fish = "~/.config/fish/config.fish"
+
+[niri.files]
+niri = "~/.config/niri/config.kdl"
+
+[sunsetr.files]
+sunsetr = "~/.config/sunsetr/sunsetr.toml"
+
+[vim.files]
+vimrc = "~/.vimrc"
+
+[wofi.files]
+config = "~/.config/wofi/config"
+style = "~/.config/wofi/style.css"
+
+[zed.files]
+keymap = "~/.config/zed/keymap.json"
+settings = "~/.config/zed/settings.json"
+tasks = "~/.config/zed/tasks.json"
+
+[noctalia.files]
+colors = "~/.config/noctalia/colors.json"
+settings = "~/.config/noctalia/settings.json"
+
+[nvim.files]
+init = "~/.config/nvim/init.lua"
+
+[settings]
+default_target_type = "automatic"
