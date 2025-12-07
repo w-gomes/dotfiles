@@ -12,5 +12,7 @@ alias l.="eza -a | grep -e '^\.'"                                        # show 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
+set -gx EDITOR nvim
+
 
 zoxide init fish | source
