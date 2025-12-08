@@ -56,7 +56,7 @@ binds {
 
     // ─── Applications ───
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: ghostty" { spawn-sh "ghostty"; }
-    MOD+D                               hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
+    MOD+D                               hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "fuzzel"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
 
     // Please choose your own file manager
@@ -297,14 +297,15 @@ binds {
     }
 
     window-rule {
+        match app-id=r#"firefox$"#
+        open-maximized true
+    }
+
+    window-rule {
         geometry-corner-radius 4 // Set every window radius to 20
         clip-to-geometry true
     }
 
-    window-rule {
-        match app-id=r#"firefox$"#
-        open-maximized true
-    }
 
 // ────────────── Environment Variables ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment

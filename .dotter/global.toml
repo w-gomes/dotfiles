@@ -22,6 +22,9 @@
 "wofi/config" = "~/.config/wofi/config"
 "wofi/style.css" = "~/.config/wofi/style.css"
 
+[fuzzel.files]
+"fuzzel/fuzzel.ini" = "~/.config/fuzzel/fuzzel.ini"
+
 [zed.files]
 "zed/keymap.json" = "~/.config/zed/keymap.json"
 "zed/settings.json" = "~/.config/zed/settings.json"
