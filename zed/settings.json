@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "buffer_line_height": "standard",
   "minimum_contrast_for_highlights": 0,
   "diagnostics_max_severity": "off",
   "inline_code_actions": false,
@@ -233,13 +234,9 @@
     }
   },
   "icon_theme": "Catppuccin Mocha",
-  "ui_font_size": 15.0,
-  "buffer_font_size": 14.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Kanso Zen (Borderless + No italics)"
-  },
+  "ui_font_size": 14.0,
+  "buffer_font_size": 15.0,
+  "theme": "Kanso Zen (Borderless + No italics)",
   "file_scan_exclusions": [
     "**/moc_*.cpp",
     "**/moc_*.h",
