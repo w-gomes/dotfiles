@@ -322,6 +322,13 @@ binds {
         QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
         XDG_SESSION_TYPE "wayland"
         XDG_CURRENT_DESKTOP "niri"
+
+        // Gaming
+        PROTON_DLSS_INDICATOR "1"
+        PROTON_DLSS_UPGRADE "1"
+        PROTON_NVIDIA_LIBS "1"
+        PROTON_USE_NTSYNC "1"
+
     }
 
     hotkey-overlay {
