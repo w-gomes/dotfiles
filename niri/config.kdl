@@ -220,7 +220,7 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 
     layout {
-        gaps 0 // Gap between windows
+        gaps 0.1 // Gap between windows
         center-focused-column "never" // Don’t auto-center focused column
 
         default-column-display "normal"
@@ -232,9 +232,9 @@ binds {
         }
 
         focus-ring {
-            width 1
-            active-color "#00ac89"
-            inactive-color "#505050"
+            width 0.1
+            active-color "#f208cd"
+            inactive-color "#000000"
         }
 
         shadow {
