@@ -36,3 +36,6 @@
 
 [fastfetch.files]
 "fastfetch/config.jsonc" = "~/.config/fastfetch/config.jsonc"
+
+[yazi.files]
+"yazi/" = "~/.config/yazi/"
