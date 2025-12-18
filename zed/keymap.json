@@ -11,23 +11,23 @@
     "context": "Editor",
     "bindings": {
       "alt-h": null,
-      "ctrl-w": null
-    }
+      "ctrl-w": null,
+    },
   },
 
   {
     "context": "ProjectPanel",
     "bindings": {
-      "f2": null
-    }
+      "f2": null,
+    },
   },
 
   {
     "context": "Pane",
     "bindings": {
       "f3": null,
-      "shift-f3": null
-    }
+      "shift-f3": null,
+    },
   },
 
   // Global leader key
@@ -52,8 +52,8 @@
 
       // :w and :wa
       "space w": "workspace::Save",
-      "space w a": "workspace::SaveAll"
-    }
+      "space w a": "workspace::SaveAll",
+    },
   },
 
   // Window Navigations
@@ -66,23 +66,23 @@
       "ctrl-j": "workspace::ActivatePaneDown",
 
       "f2": "workspace::ToggleLeftDock",
-      "f3": "file_finder::Toggle"
-    }
+      "f3": "file_finder::Toggle",
+    },
   },
 
   {
     "context": "Workspace",
     "bindings": {
-      "f3": "file_finder::Toggle"
-    }
+      "f3": "file_finder::Toggle",
+    },
   },
 
   {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
       "f3": "file_finder::Toggle",
-      "shift-f3": "workspace::NewFile"
-    }
+      "shift-f3": "workspace::NewFile",
+    },
   },
 
   // Vim Editor
@@ -104,16 +104,18 @@
 
       "f2": "workspace::ToggleLeftDock",
       "f3": "file_finder::Toggle",
-      "shift-f3": "workspace::NewFile"
-    }
+      "shift-f3": "workspace::NewFile",
+
+      "space /": "pane::DeploySearch",
+    },
   },
 
   {
     "context": "(vim_mode == normal || vim_mode == visual) && !VimCount",
     "bindings": {
       "s": "vim::PushSneak",
-      "shift-s": "vim::PushSneakBackward"
-    }
+      "shift-s": "vim::PushSneakBackward",
+    },
   },
 
   {
@@ -125,8 +127,8 @@
 
       // Mini.ai
       "q": "vim::MiniQuotes",
-      "b": "vim::MiniBrackets"
-    }
+      "b": "vim::MiniBrackets",
+    },
   },
 
   {
@@ -135,15 +137,15 @@
       "v": "editor::SelectLargerSyntaxNode",
       "V": "editor::SelectSmallerSyntaxNode",
       "ctrl-s": "vim::PushAddSurrounds",
-      "shift-x": "vim::Exchange"
-    }
+      "shift-x": "vim::Exchange",
+    },
   },
 
   {
     "context": "vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore",
-      "k j": "vim::NormalBefore"
-    }
-  }
+      "k j": "vim::NormalBefore",
+    },
+  },
 ]
