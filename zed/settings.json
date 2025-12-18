@@ -12,17 +12,17 @@
   "diagnostics_max_severity": "off",
   "inline_code_actions": false,
   "audio": {
-    "experimental.auto_speaker_volume": false
+    "experimental.auto_speaker_volume": false,
   },
   "gutter": {
-    "runnables": false
+    "runnables": false,
   },
   "diagnostics": {
     "include_warnings": false,
-    "button": true
+    "button": true,
   },
   "terminal": {
-    "button": true
+    "button": true,
   },
   "zoomed_padding": true,
   "seed_search_query_from_cursor": "never",
@@ -36,7 +36,7 @@
   "use_system_prompts": false,
   "active_pane_modifiers": {
     "border_size": 0.3,
-    "inactive_opacity": 0.85
+    "inactive_opacity": 0.85,
   },
   "on_last_window_closed": "quit_app",
   "restore_on_startup": "none",
@@ -44,22 +44,22 @@
   "toolbar": {
     "agent_review": false,
     "selections_menu": false,
-    "quick_actions": false
+    "quick_actions": false,
   },
   "outline_panel": {
     "dock": "left",
     "button": true,
-    "file_icons": false
+    "file_icons": false,
   },
   "linked_edits": false,
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   "show_completion_documentation": false,
   "show_whitespaces": "trailing",
   "show_edit_predictions": false,
   "jsx_tag_auto_close": {
-    "enabled": false
+    "enabled": false,
   },
   "use_autoclose": false,
   "buffer_font_weight": 400.0,
@@ -68,11 +68,11 @@
   "tabs": {
     "show_diagnostics": "all",
     "file_icons": false,
-    "git_status": false
+    "git_status": false,
   },
   "tab_bar": {
     "show_nav_history_buttons": false,
-    "show": true
+    "show": true,
   },
   "project_panel": {
     "sticky_scroll": false,
@@ -81,31 +81,31 @@
     "starts_open": false,
     "folder_icons": true,
     "file_icons": false,
-    "dock": "left"
+    "dock": "left",
   },
   "notification_panel": {
     "button": false,
-    "dock": "left"
+    "dock": "left",
   },
   "indent_guides": {
     "enabled": true,
     "background_coloring": "disabled",
-    "coloring": "disabled"
+    "coloring": "disabled",
   },
   "scroll_beyond_last_line": "one_page",
   "file_finder": {
     "file_icons": false,
-    "modal_max_width": "medium"
+    "modal_max_width": "medium",
   },
   "git_panel": {
     "status_style": "icon",
-    "dock": "right"
+    "dock": "right",
   },
   "cursor_shape": "bar",
   "agent_ui_font_size": 14.0,
   "preview_tabs": {
     "enabled": true,
-    "enable_preview_from_file_finder": false
+    "enable_preview_from_file_finder": false,
   },
   "title_bar": {
     "show_project_items": true,
@@ -113,39 +113,39 @@
     "show_branch_name": true,
     "show_menus": false,
     "show_sign_in": false,
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "search": {
     "case_sensitive": true,
     "regex": true,
-    "button": true
+    "button": true,
   },
   "status_bar": {
     "active_language_button": true,
-    "cursor_position_button": true
+    "cursor_position_button": true,
   },
   "collaboration_panel": {
-    "button": false
+    "button": false,
   },
   "git": {
     "git_gutter": "hide",
     "branch_picker": {
-      "show_author_name": false
+      "show_author_name": false,
     },
     "blame": {
-      "show_avatar": false
+      "show_avatar": false,
     },
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
   "relative_line_numbers": "enabled",
   "scrollbar": {
     "diagnostics": "none",
-    "show": "never"
+    "show": "never",
   },
   "journal": {
-    "hour_format": "hour24"
+    "hour_format": "hour24",
   },
 
   // Ai
@@ -157,7 +157,7 @@
     "always_allow_tool_actions": false,
     "enable_feedback": false,
     "single_file_review": false,
-    "model_parameters": []
+    "model_parameters": [],
   },
 
   // Language Specific Settings
@@ -167,51 +167,47 @@
     "C++": {},
     "Zig": {},
     "Python": {
-      "language_servers": ["ty", "ruff", "!basedpyright", "!pyrefly", "!pyright", "!pylsp"],
-      "formatter": [
-        {
-          "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    }
+      "language_servers": [
+        "ty",
+        "ruff",
+        "!basedpyright",
+        "!pyrefly",
+        "!pyright",
+        "!pylsp",
+      ],
+    },
   },
 
   // LSP configs
   "lsp": {
     "clangd": {
       "binary": {
-        "arguments": ["--compile-commands-dir=./build/clang/"]
-      }
+        "arguments": ["--compile-commands-dir=./build/clang/"],
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
-        "diagnostics": {
-          "experimental": {
-            "enable": false
-          }
+        "check": {
+          "command": "clippy",
+          "workspace": false,
         },
-        "check": { "workspace": false },
-        "cargo": { "allTargets": false }
-        // "cachePriming": { "enable": false },
-        // "discorverConfig": { "enable": false }
-      }
+        "cargo": { "allTargets": false },
+      },
     },
     "ruff": {
       "initialization_options": {
         "settings": {
           "lint": {
-            "select": ["E", "F", "I"]
+            "select": ["E", "F", "I"],
           },
-          "organizeImports": true
-        }
-      }
-    }
+          "organizeImports": true,
+        },
+      },
+    },
   },
 
   "completions": {
-    "lsp": false
+    "lsp": false,
   },
   "hide_mouse": "never",
   "ui_font_family": "Hack Nerd Font Mono",
@@ -220,7 +216,7 @@
   "base_keymap": "VSCode",
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "vim": {
@@ -230,8 +226,8 @@
       "normal": "block",
       "insert": "bar",
       "replace": "underline",
-      "visual": "block"
-    }
+      "visual": "block",
+    },
   },
   "icon_theme": "Catppuccin Mocha",
   "ui_font_size": 14.0,
@@ -283,10 +279,10 @@
     "**/.tap",
     "**/.nyc_output",
     "**/report",
-    "**/node_modules"
+    "**/node_modules",
   ],
   "auto_install_extensions": {
     "catppuccin-icons": true,
-    "kanso": true
-  }
+    "kanso": true,
+  },
 }
