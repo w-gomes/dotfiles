@@ -1,5 +1,5 @@
 [core]
-    editor = vim
+    editor = "zed --wait"
 [alias]
     s = status --short
     st = status

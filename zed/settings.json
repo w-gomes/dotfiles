@@ -23,6 +23,9 @@
   },
   "terminal": {
     "button": true,
+    "env": {
+      "GIT_EDITOR": "zed --wait",
+    },
   },
   "zoomed_padding": true,
   "seed_search_query_from_cursor": "never",
