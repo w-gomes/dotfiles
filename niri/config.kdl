@@ -244,6 +244,13 @@ binds {
             color "#0007"
         }
 
+        tab-indicator {
+          position "top"
+          gap 1
+          width 0.9
+          place-within-column
+        }
+
         struts {}
     }
 
@@ -292,6 +299,11 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
     window-rule {
+        geometry-corner-radius 4 // Set every window radius to 20
+        clip-to-geometry true
+    }
+
+    window-rule {
         match app-id=r#"firefox$"# title="^Picture-in-Picture$"
         open-floating true // Always float Firefox PiP windows
     }
@@ -299,11 +311,6 @@ binds {
     window-rule {
         match app-id=r#"firefox$"#
         open-maximized true
-    }
-
-    window-rule {
-        geometry-corner-radius 4 // Set every window radius to 20
-        clip-to-geometry true
     }
 
     window-rule {
