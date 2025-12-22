@@ -18,7 +18,7 @@
         "externalMixer": "pwvucontrol || pavucontrol",
         "mprisBlacklist": [
         ],
-        "preferredPlayer": "",
+        "preferredPlayer": "mpv",
         "visualizerQuality": "high",
         "visualizerType": "linear",
         "volumeOverdrive": false,
@@ -226,10 +226,12 @@
     "desktopWidgets": {
         "editMode": false,
         "enabled": false,
+        "gridSnap": false,
         "monitorWidgets": [
         ]
     },
     "dock": {
+        "animationSpeed": 1,
         "backgroundOpacity": 0.3,
         "colorizeIcons": false,
         "deadOpacity": 0.4,
@@ -249,7 +251,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
         "animationSpeed": 1,
-        "avatarImage": "/home/trega/.face",
+        "avatarImage": "/home/trega/Pictures/doroveryclose.png",
         "boxRadiusRatio": 1,
         "compactLockScreen": false,
         "dimmerOpacity": 0.6,
@@ -428,6 +430,7 @@
         "gtk": false,
         "kcolorscheme": false,
         "kitty": false,
+        "mango": false,
         "niri": false,
         "pywalfox": false,
         "qt": false,
