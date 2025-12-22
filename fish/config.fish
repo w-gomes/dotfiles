@@ -1,5 +1,7 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
+set fish_greeting
+
 alias vim="nvim"
 alias cd='z'
 alias ls='eza --grid --color=always --group-directories-first --icons'   # grid listing
@@ -11,8 +13,6 @@ alias l.="eza -a | grep -e '^\.'"                                        # show 
 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
-
-set -gx EDITOR nvim
 
 
 zoxide init fish | source
