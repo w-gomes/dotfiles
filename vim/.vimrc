@@ -198,3 +198,7 @@ nnoremap <leader>fh :History<CR>
 
 " zig.vim
 let g:zig_fmt_autosave = 0
+
+" fzf
+let g:fzf_vim = {}
+let g:fzf_vim.preview_window = []
