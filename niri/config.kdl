@@ -296,13 +296,8 @@ binds {
     }
 
     window-rule {
-        match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+        match app-id="firefox" title="^Picture-in-Picture$"
         open-floating true // Always float Firefox PiP windows
-    }
-
-    window-rule {
-        match app-id=r#"firefox$"#
-        open-maximized true
     }
 
     window-rule {
@@ -310,6 +305,25 @@ binds {
         default-floating-position x=10 y=10 relative-to="bottom-right"
     }
 
+    window-rule {
+        match app-id="firefox"
+        open-maximized true
+    }
+
+    window-rule {
+      match app-id="spotify"
+      open-maximized true
+    }
+
+    window-rule {
+      match app-id="discord"
+      open-maximized true
+    }
+
+    window-rule {
+      match app-id="steam"
+      open-maximized true
+    }
 
 // ────────────── Environment Variables ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment
