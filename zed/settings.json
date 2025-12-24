@@ -214,7 +214,10 @@
   },
   "hide_mouse": "never",
   "ui_font_family": "Hack Nerd Font Mono",
-  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_features": {
+    "calt": false,
+  },
   "auto_update": false,
   "base_keymap": "VSCode",
   "telemetry": {
