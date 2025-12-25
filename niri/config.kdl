@@ -1,6 +1,3 @@
-// Niri configuration for CachyOS
-// For documentation and full reference, see: https://github.com/YaLTeR/niri/wiki
-
 // ────────────── Input Configuration ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Input
 
@@ -27,6 +24,7 @@ input {
     workspace-auto-back-and-forth // Enable workspace back & forth switching
 }
 
+
 // ────────────── Output Configuration ──────────────
 // You can run `niri msg outputs` to get the correct name for your displays.
 // You will have to remove "/-" and edit it before it takes effect.
@@ -45,8 +43,6 @@ output "DP-1" {
     position x=1920 y=0
 }
 
-
-//output "DP-1"
 
 // ────────────── Keybindings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Key-Bindings
@@ -194,19 +190,20 @@ binds {
     CTRL+ALT+DELETE                     { quit; } // Also quits Niri
 }
 
+
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
     spawn-sh-at-startup "swww img /home/trega/Pictures/Wallpapers/glitter-waves-dark.jpg" // Set wallpaper
-    //spawn-sh-at-startup "waybar" // Launch waybar
 
     spawn-at-startup    "qs" "-c" "noctalia-shell"
     spawn-at-startup    "sunsetr"
 
     prefer-no-csd // Disable program decorations
-    screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png" // Disable screenshot saving
+    screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
+
 
 // ────────────── Layout Settings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -252,8 +249,10 @@ binds {
       }
     }
 
+
 // ────────────── Animation Settings ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Animations
+
     animations {
         workspace-switch {
             spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
@@ -286,6 +285,7 @@ binds {
             spring damping-ratio=1.0 stiffness=900 epsilon=0.0001
         }
     }
+
 
 // ────────────── Window Rules ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
@@ -325,6 +325,7 @@ binds {
       open-maximized true
     }
 
+
 // ────────────── Environment Variables ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment
 
@@ -341,7 +342,6 @@ binds {
         PROTON_DLSS_UPGRADE "1"
         PROTON_NVIDIA_LIBS "1"
         PROTON_USE_NTSYNC "1"
-
     }
 
     hotkey-overlay {
