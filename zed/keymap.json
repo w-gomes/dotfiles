@@ -12,6 +12,7 @@
     "bindings": {
       "alt-h": null,
       "ctrl-w": null,
+      "ctrl-;": null,
     },
   },
 
