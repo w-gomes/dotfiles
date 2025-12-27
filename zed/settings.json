@@ -45,6 +45,7 @@
   "restore_on_startup": "none",
   "format_on_save": "on",
   "toolbar": {
+    "breadcrumbs": true,
     "agent_review": false,
     "selections_menu": false,
     "quick_actions": false,
@@ -74,6 +75,7 @@
     "git_status": false,
   },
   "tab_bar": {
+    "show_tab_bar_buttons": false,
     "show_nav_history_buttons": false,
     "show": true,
   },

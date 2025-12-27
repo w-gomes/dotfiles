@@ -8,26 +8,22 @@
 [
   // Clear out a few defaults
   {
-    "context": "Editor",
     "bindings": {
       "alt-h": null,
       "ctrl-w": null,
       "ctrl-;": null,
-    },
-  },
-
-  {
-    "context": "ProjectPanel",
-    "bindings": {
+      "f1": null,
       "f2": null,
-    },
-  },
-
-  {
-    "context": "Pane",
-    "bindings": {
       "f3": null,
-      "shift-f3": null,
+      "f4": null,
+      "f5": null,
+      "f6": null,
+      "f7": null,
+      "f8": null,
+      "f9": null,
+      "f10": null,
+      "f11": null,
+      "f12": null,
     },
   },
 
@@ -72,17 +68,11 @@
   },
 
   {
-    "context": "Workspace",
-    "bindings": {
-      "f3": "file_finder::Toggle",
-    },
-  },
-
-  {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
+      "f1": "projects::OpenRecent",
+      "f2": "workspace::ToggleLeftDock",
       "f3": "file_finder::Toggle",
-      "shift-f3": "workspace::NewFile",
     },
   },
 
@@ -105,9 +95,9 @@
 
       "f2": "workspace::ToggleLeftDock",
       "f3": "file_finder::Toggle",
-      "shift-f3": "workspace::NewFile",
-
-      "space /": "pane::DeploySearch",
+      "f4": "tab_switcher::ToggleAll",
+      "f5": "pane::ActivatePreviousItem",
+      "f6": "pane::ActivateNextItem",
     },
   },
 
