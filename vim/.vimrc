@@ -7,6 +7,7 @@ filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'vim-fuzzbox/fuzzbox.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'justinmk/vim-sneak'
@@ -179,18 +180,16 @@ nnoremap j gj
 nnoremap gj j
 
 " fzf commands
-nnoremap <leader>ff :Files<CR>
-nnoremap <leader>fg :GFiles<CR>
-nnoremap <leader>fl :Lines<CR>
-nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader>fc :Changes<CR>
-nnoremap <leader>fr :Rg<CR>
-nnoremap <leader>fh :History<CR>
+nnoremap <leader>fm :History<CR>
 
-"nnoremap <leader>fbl :BLines<CR>
-"nnoremap <leader>fg? :GFiles?<CR>
-"nnoremap <leader>fm :Marks<CR>
-"nnoremap <leader>fbm :BMarks<CR>
+" fuzzybox commands
+nnoremap <silent> <leader>ff :FuzzyFiles<CR>
+nnoremap <silent> <leader>fb :FuzzyBuffers<CR>
+nnoremap <silent> <leader>fi :FuzzyInBuffer<CR>
+nnoremap <silent> <leader>fg :FuzzyGrep<CR>
+nnoremap <silent> <leader>fr :FuzzyMruCwd<CR>
+nnoremap <silent> <leader>fc :FuzzyCommands<CR>
+nnoremap <silent> <leader>fh :FuzzyHelp<CR>
 
 
 "-----------------------------------------------------------------------------
