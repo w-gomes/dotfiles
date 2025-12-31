@@ -69,20 +69,20 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 145,
+                    "maxWidth": 150,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
                     "showArtistFirst": true,
-                    "showProgressRing": true,
+                    "showProgressRing": false,
                     "showVisualizer": true,
                     "useFixedWidth": false,
                     "visualizerType": "wave"
                 },
                 {
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "maxWidth": 145,
+                    "maxWidth": 150,
                     "scrollingMode": "hover",
                     "showIcon": true,
                     "useFixedWidth": false
@@ -102,10 +102,6 @@
                     "showNetworkStats": false,
                     "useMonospaceFont": true,
                     "usePrimaryColor": false
-                },
-                {
-                    "id": "Spacer",
-                    "width": 5
                 },
                 {
                     "blacklist": [
