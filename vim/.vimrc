@@ -167,10 +167,8 @@ xnoremap <leader>p "_dP
 nnoremap <leader>d "_d
 
 " Tab
-nnoremap <S-t> :tabnew<CR>
-nnoremap <S-c> :tabc<CR>
-nnoremap <S-l> gt
-nnoremap <S-h> gT
+nnoremap <leader>nt :tabnew<CR>
+nnoremap <leader>ct :tabc<CR>
 
 " Replace real line keys for display line
 " when going up and down
