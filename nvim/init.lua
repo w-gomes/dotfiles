@@ -211,11 +211,9 @@ map("n", "j", "gj", { noremap = true })
 map("n", "gk", "k", { noremap = true })
 map("n", "gj", "j", { noremap = true })
 
--- Tabs
-map("n", "<S-t>", ":tabnew<CR>", { noremap = true })
-map("n", "<S-c>", ":tabc<CR>", { noremap = true })
-map("n", "<S-l>", "gt", { noremap = true })
-map("n", "<S-h>", "gT", { noremap = true })
+-- Tab
+map("n", "<leader>nt", ":tabnew<CR>", { noremap = true })
+map("n", "<leader>ct", ":tabc<CR>", { noremap = true })
 
 -- fzf
 local fzf = require("fzf-lua")
