@@ -4,12 +4,25 @@
 [fish.files]
 "fish/config.fish" = "~/.config/fish/config.fish"
 
+[hyprland.files]
+"hypr/hyprland.conf" = "~/.config/hypr/hyprland.conf"
+
+[hyprpaper.files]
+"hypr/hyprpaper.conf" = "~/.config/hypr/hyprpaper.conf"
+
 [niri.files]
 "niri/config.kdl" = "~/.config/niri/config.kdl"
+
+[niri-laptop.files]
+"niri/laptop-config.kdl" = "~/.config/niri/config.kdl"
 
 [noctalia.files]
 "noctalia/colors.json" = "~/.config/noctalia/colors.json"
 "noctalia/settings.json" = "~/.config/noctalia/settings.json"
+
+[noctalia-laptop.files]
+"noctalia/colors.json" = "~/.config/noctalia/colors.json"
+"noctalia/laptop-settings.json" = "~/.config/noctalia/settings.json"
 
 [sunsetr.files]
 "sunsetr/sunsetr.toml" = "~/.config/sunsetr/sunsetr.toml"

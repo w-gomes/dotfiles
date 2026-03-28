@@ -331,7 +331,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/trega/Pictures/doroveryclose.png",
+        "avatarImage": "",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -617,7 +617,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/trega/Pictures/Wallpapers",
+        "directory": "/home/tre/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": false,
         "favorites": [
