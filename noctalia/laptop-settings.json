@@ -161,6 +161,21 @@
                     "usePadding": false
                 },
                 {
+                    "deviceNativePath": "__default__",
+                    "displayMode": "icon-always",
+                    "hideIfIdle": false,
+                    "hideIfNotDetected": true,
+                    "id": "Battery",
+                    "showNoctaliaPerformance": false,
+                    "showPowerProfiles": false
+                },
+                {
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Network",
+                    "textColor": "none"
+                },
+                {
                     "blacklist": [
                     ],
                     "chevronColor": "none",
@@ -214,10 +229,6 @@
             {
                 "enabled": true,
                 "id": "calendar-month-card"
-            },
-            {
-                "enabled": true,
-                "id": "timer-card"
             },
             {
                 "enabled": true,
@@ -625,6 +636,7 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
         ],
         "overviewBlur": 0.4,
