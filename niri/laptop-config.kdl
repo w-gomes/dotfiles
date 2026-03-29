@@ -55,9 +55,9 @@ binds {
 
     // ─── Applications ───
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: ghostty" { spawn-sh "ghostty"; }
-    MOD+D                               hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "fuzzel"; }
+    MOD+D                               hotkey-overlay-title="Open App Launcher: fuzzel" { spawn-sh "fuzzel"; }
     MOD+SHIFT+X                         hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
-    MOD+SHIFT+D                         hotkey-overlay-title="File Manager: Dolphin" { spawn-sh "thunar"; }
+    MOD+SHIFT+D                         hotkey-overlay-title="File Manager: thunar" { spawn-sh "thunar"; }
 
     // ─── Window, Workspace Movements and Focus ───
     MOD+SHIFT+Q                         { close-window; }
