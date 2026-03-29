@@ -192,8 +192,8 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
-    spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "swww img /home/tre/Pictures/Wallpapers/walls.jpg" // Set wallpaper
+    spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
+    spawn-sh-at-startup "awww img /home/tre/Pictures/Wallpapers/walls.jpg" // Set wallpaper
 
     spawn-at-startup    "noctalia-shell"
     spawn-at-startup    "sunsetr"
