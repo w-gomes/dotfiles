@@ -161,7 +161,6 @@
     "button": false,
     "expand_terminal_card": false,
     "expand_edit_card": false,
-    "always_allow_tool_actions": false,
     "enable_feedback": false,
     "single_file_review": false,
     "model_parameters": [],
