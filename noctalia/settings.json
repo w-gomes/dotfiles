@@ -47,7 +47,7 @@
         "capsuleColorKey": "none",
         "capsuleOpacity": 1,
         "contentPadding": 2,
-        "density": "compact",
+        "density": "mini",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
         "fontScale": 1,
@@ -217,10 +217,6 @@
             },
             {
                 "enabled": true,
-                "id": "timer-card"
-            },
-            {
-                "enabled": true,
                 "id": "weather-card"
             }
         ]
@@ -233,7 +229,6 @@
         "monitorForColors": "",
         "predefinedScheme": "Monochrome",
         "schedulingMode": "off",
-        "syncGsettings": true,
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -387,7 +382,6 @@
         "showHibernateOnLockScreen": false,
         "showScreenCorners": false,
         "showSessionButtonsOnLockScreen": true,
-        "smoothScrollEnabled": true,
         "telemetryEnabled": false
     },
     "hooks": {
@@ -626,6 +620,16 @@
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "monitorDirectories": [
+            {
+                "directory": "/home/trega/Pictures/Wallpapers",
+                "name": "DP-1",
+                "wallpaper": ""
+            },
+            {
+                "directory": "/home/trega/Pictures/Wallpapers",
+                "name": "HDMI-A-1",
+                "wallpaper": ""
+            }
         ],
         "overviewBlur": 0.4,
         "overviewEnabled": false,
