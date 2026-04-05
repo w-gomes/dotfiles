@@ -48,27 +48,6 @@ require("lazy").setup({
     {
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
-      config = function()
-        require("nvim-treesitter.configs").setup({
-          ensure_installed = {
-            "c",
-            "cpp",
-            "cmake",
-            "c_sharp",
-            "python",
-            "rust",
-            "zig",
-            "go",
-            "lua",
-          },
-          highlight = {
-            enable = true,
-            use_languagetree = true,
-            additional_vim_regex_highlighting = false,
-          },
-          indent = { enable = false },
-        })
-      end,
     },
     {
       "codethread/qmk.nvim",
