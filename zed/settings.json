@@ -95,9 +95,9 @@
   "indent_guides": {
     "active_line_width": 2,
     "line_width": 1,
-    "enabled": true,
+    "enabled": false,
     "background_coloring": "disabled",
-    "coloring": "fixed",
+    "coloring": "disabled",
   },
   "scroll_beyond_last_line": "one_page",
   "file_finder": {
