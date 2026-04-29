@@ -42,7 +42,7 @@
     "inactive_opacity": 0.85,
   },
   "on_last_window_closed": "quit_app",
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "format_on_save": "on",
   "toolbar": {
     "breadcrumbs": true,
@@ -115,12 +115,12 @@
     "enable_preview_from_file_finder": false,
   },
   "title_bar": {
+    "show_branch_status_icon": true,
     "show_project_items": true,
     "show_user_picture": false,
     "show_branch_name": true,
     "show_menus": false,
     "show_sign_in": false,
-    "show_branch_icon": true,
   },
   "search": {
     "case_sensitive": true,
@@ -132,6 +132,7 @@
     "cursor_position_button": true,
   },
   "collaboration_panel": {
+    "dock": "left",
     "button": false,
   },
   "git": {
@@ -158,6 +159,7 @@
   // Ai
   "disable_ai": true,
   "agent": {
+    "dock": "right",
     "button": false,
     "expand_terminal_card": false,
     "expand_edit_card": false,
