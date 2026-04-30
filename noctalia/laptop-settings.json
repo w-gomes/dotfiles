@@ -426,14 +426,14 @@
         "enabled": true,
         "fadeDuration": 5,
         "lockCommand": "",
-        "lockTimeout": 600,
+        "lockTimeout": 7200,
         "resumeLockCommand": "",
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
         "screenOffCommand": "",
-        "screenOffTimeout": 900,
+        "screenOffTimeout": 0,
         "suspendCommand": "",
-        "suspendTimeout": 1800
+        "suspendTimeout": 0
     },
     "location": {
         "analogClockInCalendar": false,
