@@ -354,7 +354,7 @@
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
-        "compactLockScreen": false,
+        "compactLockScreen": true,
         "dimmerOpacity": 0.6,
         "enableBlurBehind": true,
         "enableLockScreenCountdown": true,
@@ -392,9 +392,10 @@
         "lockScreenBlur": 0,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
+            "eDP-1"
         ],
         "lockScreenTint": 0,
-        "passwordChars": false,
+        "passwordChars": true,
         "radiusRatio": 1,
         "reverseScroll": false,
         "scaleRatio": 1,
