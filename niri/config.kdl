@@ -168,8 +168,7 @@ binds {
 
     // ─── Screenshots ───
     // TODO: add satty
-    // MOD+PRINT                           { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
-    MOD+PRINT                           { spawn "~/apps/custom-screenshot.sh"; }
+    MOD+PRINT                           { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
     MOD+ALT+PRINT                       { screenshot; }
     MOD+SHIFT+PRINT                     { screenshot-screen; }
     MOD+CTRL+PRINT                      { screenshot-window; }
