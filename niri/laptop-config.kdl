@@ -8,7 +8,7 @@ input {
         xkb {
             layout "us"
         }
-        numlock // Enable numlock on startup
+        numlock
     }
 
     touchpad {
@@ -19,7 +19,7 @@ input {
     }
 
     mouse {
-        accel-speed -0.1
+        accel-speed -0.5
         accel-profile "flat"
     }
 
@@ -34,7 +34,7 @@ input {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
 output "eDP-1" {
-    mode "1920x1080@60.000"
+    mode "1366x768@60.000"
     scale 1
     position x=0 y=0
     focus-at-startup
@@ -56,7 +56,6 @@ binds {
     // ─── Applications ───
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: ghostty" { spawn-sh "ghostty"; }
     MOD+D                               hotkey-overlay-title="Open App Launcher: fuzzel" { spawn-sh "fuzzel"; }
-    MOD+SHIFT+X                         hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
     MOD+SHIFT+D                         hotkey-overlay-title="File Manager: thunar" { spawn-sh "thunar"; }
 
     // ─── Window, Workspace Movements and Focus ───
@@ -165,7 +164,7 @@ binds {
     MOD+SHIFT+EQUAL                     { set-window-height "+10%"; }
 
     // ─── Screenshots ───
-    MOD+PRINT                           { spawn "~/apps/custom-screenshot.sh"; }
+    MOD+PRINT                           { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
     MOD+ALT+PRINT                       { screenshot; }
     MOD+SHIFT+PRINT                     { screenshot-screen; }
     MOD+CTRL+PRINT                      { screenshot-window; }
@@ -191,12 +190,15 @@ binds {
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
-    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
-    spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "awww img /home/tre/Pictures/Wallpapers/desk2.jpg" // Set wallpaper
+    // Apparently NixOS module provides niri-flake-polkit
+    // spawn-sh-at-startup "systemctl --user start polkit-gnome-authentication-agent-1"
 
     spawn-at-startup    "noctalia-shell"
     spawn-at-startup    "sunsetr"
+
+    spawn-sh-at-startup "awww-daemon"
+    spawn-sh-at-startup "awww img /home/tre/Pictures/Wallpapers/desk2.jpg"
+    spawn-sh-at-startup "xwayland-satellite"
 
     prefer-no-csd // Disable program decorations
     screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"

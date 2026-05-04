@@ -8,13 +8,11 @@ input {
         xkb {
             layout "us"
         }
-        numlock // Enable numlock on startup
+        numlock
     }
 
     touchpad {
         off
-        //tap // Enable tap-to-click
-        //natural-scroll // Enable natural (macOS-style) scrolling
     }
 
     mouse {
@@ -169,6 +167,8 @@ binds {
     MOD+SHIFT+EQUAL                     { set-window-height "+10%"; }
 
     // ─── Screenshots ───
+    // TODO: add satty
+    // MOD+PRINT                           { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
     MOD+PRINT                           { spawn "~/apps/custom-screenshot.sh"; }
     MOD+ALT+PRINT                       { screenshot; }
     MOD+SHIFT+PRINT                     { screenshot-screen; }
@@ -195,12 +195,12 @@ binds {
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
 
+    spawn-at-startup    "qs" "-c" "noctalia-shell"
+    spawn-at-startup    "sunsetr"
+
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
     spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
     spawn-sh-at-startup "awww img /home/trega/Pictures/Wallpapers/glitter-waves-dark.jpg" // Set wallpaper
-
-    spawn-at-startup    "qs" "-c" "noctalia-shell"
-    spawn-at-startup    "sunsetr"
 
     prefer-no-csd // Disable program decorations
     screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"
