@@ -193,7 +193,7 @@ binds {
 
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
     spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "awww img /home/tre/Pictures/Wallpapers/walls.jpg" // Set wallpaper
+    spawn-sh-at-startup "awww img /home/tre/Pictures/Wallpapers/desk2.jpg" // Set wallpaper
 
     spawn-at-startup    "noctalia-shell"
     spawn-at-startup    "sunsetr"
