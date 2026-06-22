@@ -424,7 +424,7 @@
     },
     "idle": {
         "customCommands": "[]",
-        "enabled": false,
+        "enabled": true,
         "fadeDuration": 5,
         "lockCommand": "",
         "lockTimeout": 7200,
@@ -432,7 +432,7 @@
         "resumeScreenOffCommand": "",
         "resumeSuspendCommand": "",
         "screenOffCommand": "",
-        "screenOffTimeout": 0,
+        "screenOffTimeout": 900,
         "suspendCommand": "",
         "suspendTimeout": 0
     },
