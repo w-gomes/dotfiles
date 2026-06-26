@@ -181,6 +181,14 @@ binds {
     XF86AudioPlay                       allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPrev                       allow-when-locked=true { spawn-sh "playerctl previous"; }
 
+    // Noctalia
+    MOD+SHIFT+X hotkey-overlay-title="Lock Screen" {
+      spawn-sh "noctalia-shell ipc call lockScreen lock";
+    }
+    MOD+ALT+Q hotkey-overlay-title="Session Menu" {
+      spawn-sh "noctalia-shell ipc call sessionMenu toggle";
+    }
+
     // ─── Exit ───
     MOD+SHIFT+E                         { quit; }
     CTRL+ALT+DELETE                     { quit; } // Also quits Niri
