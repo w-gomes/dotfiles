@@ -33,7 +33,8 @@
     "bindings": {
       "space space": "tab_switcher::ToggleAll", // Works like :ls
       "space f f": "file_finder::Toggle",
-      "space f n": "workspace::NewFile",
+      "space n f": "workspace::NewFile",
+      "space t f": "text_finder::Toggle",
 
       // Splits panels right or down.
       "space m v": "pane::SplitAndMoveRight",
