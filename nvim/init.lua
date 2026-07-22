@@ -197,12 +197,10 @@ map("n", "<leader>ct", ":tabc<CR>", { noremap = true })
 -- fzf
 local fzf = require("fzf-lua")
 map("n", "<leader>ff", fzf.files, { noremap = true, desc = "Find Files" })
-map("n", "<leader>fg", fzf.git_files, { noremap = true, desc = "Git Files" })
-map("n", "<leader>fl", fzf.live_grep, { noremap = true, desc = "Live Grep" })
+map("n", "<leader>fg", fzf.live_grep, { noremap = true, desc = "Live Grep" })
 map("n", "<leader>fb", fzf.buffers, { noremap = true, desc = "Buffers" })
-map("n", "<leader>fc", fzf.git_status, { noremap = true, desc = "Git Changes" })
-map("n", "<leader>fr", fzf.grep_cword, { noremap = true, desc = "Grep String" })
 map("n", "<leader>fh", fzf.oldfiles, { noremap = true, desc = "Previously Open Files" })
+map("n", "<leader>fc", fzf.commands, { noremap = true, desc = "Commands" })
 
 
 --

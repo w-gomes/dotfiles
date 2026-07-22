@@ -7,7 +7,6 @@ filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-fuzzbox/fuzzbox.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'justinmk/vim-sneak'
@@ -178,16 +177,12 @@ nnoremap j gj
 nnoremap gj j
 
 " fzf commands
-nnoremap <leader>fm :History<CR>
+nnoremap <leader>ff :Files<CR>
+nnoremap <leader>fg :RG<CR>
+nnoremap <leader>fb :FuzzyBuffers<CR>
+nnoremap <leader>fh :History<CR>
+nnoremap <leader>fc :Commands<CR>
 
-" fuzzybox commands
-nnoremap <silent> <leader>ff :FuzzyFiles<CR>
-nnoremap <silent> <leader>fb :FuzzyBuffers<CR>
-nnoremap <silent> <leader>fi :FuzzyInBuffer<CR>
-nnoremap <silent> <leader>fg :FuzzyGrep<CR>
-nnoremap <silent> <leader>fr :FuzzyMruCwd<CR>
-nnoremap <silent> <leader>fc :FuzzyCommands<CR>
-nnoremap <silent> <leader>fh :FuzzyHelp<CR>
 
 
 "-----------------------------------------------------------------------------
