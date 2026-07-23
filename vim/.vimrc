@@ -179,7 +179,7 @@ nnoremap gj j
 " fzf commands
 nnoremap <leader>ff :Files<CR>
 nnoremap <leader>fg :RG<CR>
-nnoremap <leader>fb :FuzzyBuffers<CR>
+nnoremap <leader>fb :Buffers<CR>
 nnoremap <leader>fh :History<CR>
 nnoremap <leader>fc :Commands<CR>
 
