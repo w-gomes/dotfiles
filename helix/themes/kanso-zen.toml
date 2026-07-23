@@ -1,0 +1,136 @@
+## User interface
+"ui.selection" = { bg = "zenBlue2" }
+"ui.selection.primary" = { bg = "zenBlue1" }
+"ui.background" = { fg = "fujiWhite", bg = "zen0" }
+"ui.gutter" = { fg = "zen3", bg = "zen1" }
+
+"ui.linenr" = { fg = "zen3", bg = "zen1" }
+"ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
+
+"ui.virtual" = "zen2"
+"ui.virtual.ruler" = { bg = "zen2" }
+"ui.virtual.inlay-hint" = "zen3"
+"ui.virtual.inlay-hint.parameter" = { fg = "carpYellow", modifiers = ["dim"] }
+"ui.virtual.inlay-hint.type" = { fg = "springBlue", modifiers = ["dim"] }
+"ui.virtual.jump-label" = { fg = "peachRed", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "oldWhite", bg = "zen0" }
+
+"ui.bufferline" = { fg = "oldWhite", bg = "zen0" }
+"ui.bufferline.active" = { fg = "oldWhite", bg = "zen0" }
+"ui.bufferline.background" = { bg = "zen0" }
+
+"ui.popup" = { fg = "oldWhite", bg = "zen1" }
+"ui.window" = { fg = "zen0" }
+"ui.help" = { fg = "fujiWhite", bg = "zen1" }
+"ui.text" = "fujiWhite"
+"ui.text.focus" = { fg = "fujiWhite", bg = "zenBlue1", modifiers = ["bold"] }
+
+"ui.cursor" = { fg = "zenBlue1", bg = "waveAqua2" }
+"ui.cursor.primary" = { fg = "zen0", bg = "fujiWhite" }
+"ui.cursor.match" = { fg = "roninYellow", modifiers = ["bold"] }
+"ui.highlight" = { fg = "fujiWhite", bg = "zenBlue2" }
+
+"ui.cursorline.primary" = { bg = "zen2" }
+"ui.cursorcolumn.primary" = { bg = "zen2" }
+
+"diagnostic.info" = { underline = { color = "crystalBlue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "waveAqua1", style = "curl" } }
+"diagnostic.deprecated" = { fg = "katanaGray", modifiers = ["crossed_out"] }
+
+## Syntax highlighting
+"attribute" = "waveRed"
+"type" = "springBlue"
+"type.enum.variant" = "autumnYellow"
+"constructor" = "springGreen"
+"constant" = "autumnYellow"
+"constant.numeric" = "sakuraPink"
+"constant.character.escape" = "crystalBlue"
+"string" = "springGreen"
+"string.regexp" = "waveRed"
+"string.special.url" = "springBlue"
+"string.special.symbol" = "springBlue"
+"comment" = "fujiGray"
+"variable" = "fujiWhite"
+"variable.builtin" = "waveRed"
+"variable.parameter" = "zen3"
+"variable.other.member" = "carpYellow"
+"label" = "waveRed"
+"punctuation" = "fujiWhite"
+"keyword" = "oniViolet"
+"keyword.control.return" = "peachRed"
+"keyword.control.exception" = "peachRed"
+"keyword.directive" = "peachRed"
+"operator" = "peachRed"
+"function" = "crystalBlue"
+"function.builtin" = "crystalBlue"
+"function.macro" = "waveRed"
+"tag" = "carpYellow"
+"namespace" = "fujiWhite"
+"special" = "carpYellow"
+
+## Markup modifiers
+"markup.heading.marker" = "oniViolet"
+"markup.heading.1" = { fg = "autumnYellow", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "carpYellow", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "crystalBlue", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "fujiWhite", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "peachRed", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "sakuraPink", modifiers = ["bold"] }
+"markup.list.numbered" = "sakuraPink"
+"markup.list.unnumbered" = "peachRed"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = "springBlue"
+"markup.link.url" = { fg = "sakuraPink", underline.style = "line" }
+"markup.link.label" = "crystalBlue"
+"markup.quote" = "oniViolet"
+"markup.raw" = "springGreen"
+
+[palette]
+# Bg Shades
+zen0 = "#090E13"
+zen1 = "#1C1E25"
+zen2 = "#24262D"
+zen3 = "#393B42"
+
+# Popup and Floats
+zenBlue1 = "#223249"
+zenBlue2 = "#2D4F67"
+
+# Diff and Git
+winterGreen = "#2B3328"
+winterYellow = "#49443C"
+winterRed = "#43242B"
+winterBlue = "#252535"
+autumnGreen = "#76946A"
+autumnRed = "#C34043"
+autumnYellow = "#DCA561"
+
+# Diag
+samuraiRed = "#E82424"
+roninYellow = "#FF9E3B"
+waveAqua1 = "#6A9589"
+waveAqua2 = "#7AA89F"
+
+# Fg and Comments
+oldWhite = "#C8C093"
+fujiWhite = "#DCD7BA"
+fujiGray = "#727169"
+oniViolet = "#957FB8"
+oniViolet2 = "#b8b4d0"
+crystalBlue = "#7E9CD8"
+springViolet1 = "#938AA9"
+springViolet2 = "#9CABCA"
+springBlue = "#7FB4CA"
+# waveAqua2 = "#7AA89F"
+springGreen = "#98BB6C"
+boatYellow1 = "#938056"
+boatYellow2 = "#C0A36E"
+carpYellow = "#E6C384"
+sakuraPink = "#D27E99"
+waveRed = "#E46876"
+peachRed = "#FF5D62"
+surimiOrange = "#FFA066"
+katanaGray = "#717C7C"
