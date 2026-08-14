@@ -5,8 +5,7 @@ filetype off
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'vim-fuzzbox/fuzzbox.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'justinmk/vim-sneak'
@@ -176,12 +175,12 @@ nnoremap gk k
 nnoremap j gj
 nnoremap gj j
 
-" fzf commands
-nnoremap <leader>ff :Files<CR>
-nnoremap <leader>fg :RG<CR>
-nnoremap <leader>fb :Buffers<CR>
-nnoremap <leader>fh :History<CR>
-nnoremap <leader>fc :Commands<CR>
+" fuzzybox commands
+nnoremap <leader>ff :FuzzyFiles<CR>
+nnoremap <leader>fg :FuzzyGrep<CR>
+nnoremap <leader>fb :FuzzyBuffers<CR>
+nnoremap <leader>fh :FuzzyMru<CR>
+nnoremap <leader>fc :FuzzyCommands<CR>
 
 
 
@@ -191,6 +190,5 @@ nnoremap <leader>fc :Commands<CR>
 " zig.vim
 let g:zig_fmt_autosave = 0
 
-" fzf
-let g:fzf_vim = {}
-let g:fzf_vim.preview_window = []
+" Fuzzybox
+let g:fuzzbox_preview = 0
