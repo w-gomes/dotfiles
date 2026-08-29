@@ -107,6 +107,7 @@ let mapleader = "\<Space>"
 nnoremap Q <nop>
 
 map <leader>w :w<CR>
+map <leader>wa :wa<CR>
 
 map <F1> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 map <F2> :NERDTreeToggle<CR>

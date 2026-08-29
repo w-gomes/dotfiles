@@ -31,10 +31,11 @@
   {
     "context": "(Workspace && !Editor && !Terminal) || (Editor && VimControl)",
     "bindings": {
-      "space space": "tab_switcher::ToggleAll", // Works like :ls
-      "space f f": "file_finder::Toggle",
-      "space n f": "workspace::NewFile",
-      "space f g": "text_finder::Toggle",
+      "space f b": "tab_switcher::ToggleAll", // Works like :ls
+      "space f f": "file_finder::Toggle",     // Finds files
+      "space f g": "text_finder::Toggle",     // Grep
+
+      "space f n": "workspace::NewFile",      // Creates new file
 
       // Splits panels right or down.
       "space m v": "pane::SplitAndMoveRight",

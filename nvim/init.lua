@@ -151,6 +151,7 @@ local map = vim.keymap.set
 map("n", "Q", "<nop>")
 map("n", "<space>", "<nop>")
 map("n", "<leader>w", "<cmd>w<cr>")
+map("n", "<leader>wa", "<cmd>wa<cr>")
 
 map("n", "<F1>", [[:%s/\s\+$//e<CR>:nohl<CR>]])
 map("n", "<F2>", ":NvimTreeToggle<CR>")
