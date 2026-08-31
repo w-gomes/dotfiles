@@ -183,10 +183,10 @@ binds {
 
     // Noctalia
     MOD+SHIFT+X hotkey-overlay-title="Lock Screen" {
-      spawn-sh "noctalia-shell ipc call lockScreen lock";
+      spawn-sh "noctalia msg lockScreen lock";
     }
     MOD+ALT+Q hotkey-overlay-title="Session Menu" {
-      spawn-sh "noctalia-shell ipc call sessionMenu toggle";
+      spawn-sh "noctalia msg sessionMenu toggle";
     }
 
     // ─── Exit ───
@@ -201,7 +201,7 @@ binds {
     // Apparently NixOS module provides niri-flake-polkit
     // spawn-sh-at-startup "systemctl --user start polkit-gnome-authentication-agent-1"
 
-    spawn-at-startup    "noctalia-shell"
+    spawn-at-startup    "noctalia"
     spawn-at-startup    "sunsetr"
 
     spawn-sh-at-startup "awww-daemon"
