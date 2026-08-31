@@ -21,7 +21,7 @@
 "noctalia/settings.json" = "~/.config/noctalia/settings.json"
 
 [noctalia-miii.files]
-"noctalia/miii-settings.toml" = "~/.config/noctalia/settings.toml"
+"noctalia/miii-config.toml" = "~/.config/noctalia/config.toml"
 
 [sunsetr.files]
 "sunsetr/sunsetr.toml" = "~/.config/sunsetr/sunsetr.toml"
