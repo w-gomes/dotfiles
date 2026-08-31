@@ -183,10 +183,10 @@ binds {
 
     // Noctalia
     MOD+SHIFT+X hotkey-overlay-title="Lock Screen" {
-      spawn-sh "noctalia msg lockScreen lock";
+      spawn-sh "noctalia msg session lock";
     }
     MOD+ALT+Q hotkey-overlay-title="Session Menu" {
-      spawn-sh "noctalia msg sessionMenu toggle";
+      spawn-sh "noctalia msg panel-toggle session";
     }
 
     // ─── Exit ───
