@@ -20,9 +20,8 @@
 "noctalia/colors.json" = "~/.config/noctalia/colors.json"
 "noctalia/settings.json" = "~/.config/noctalia/settings.json"
 
-[noctalia-laptop.files]
-"noctalia/colors.json" = "~/.config/noctalia/colors.json"
-"noctalia/laptop-settings.json" = "~/.config/noctalia/settings.json"
+[noctalia-miii.files]
+"noctalia/miii-settings.toml" = "~/.config/noctalia/settings.toml"
 
 [sunsetr.files]
 "sunsetr/sunsetr.toml" = "~/.config/sunsetr/sunsetr.toml"
