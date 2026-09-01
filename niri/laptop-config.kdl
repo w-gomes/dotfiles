@@ -328,6 +328,12 @@ binds {
       open-maximized true
     }
 
+    window-rule {
+      match app-id="dev.noctalia.Noctalia"
+      open-floating true
+      default-column-width { fixed 900; }
+      default-column-height { fixed 600; }
+    }
 
 // ────────────── Environment Variables ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment
