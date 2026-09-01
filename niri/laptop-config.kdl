@@ -332,7 +332,7 @@ binds {
       match app-id="dev.noctalia.Noctalia"
       open-floating true
       default-column-width { fixed 900; }
-      default-column-height { fixed 600; }
+      default-window-height { fixed 600; }
     }
 
 // ────────────── Environment Variables ──────────────

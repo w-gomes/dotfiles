@@ -338,7 +338,7 @@ binds {
       match app-id="dev.noctalia.Noctalia"
       open-floating true
       default-column-width { fixed 1080; }
-      default-column-height { fixed 920; }
+      default-window-height { fixed 920; }
     }
 
 
