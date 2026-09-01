@@ -51,3 +51,6 @@
 
 [yazi.files]
 "yazi/" = "~/.config/yazi/"
+
+[herdr.files]
+"herdr/config.toml" = "~/.config/herdr/config.toml"
