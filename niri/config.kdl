@@ -62,7 +62,7 @@ binds {
     MOD+SHIFT+D                         hotkey-overlay-title="File Manager: thunar" { spawn-sh "thunar"; }
 
     // ─── Window, Workspace Movements and Focus ───
-    MOD+SHIFT+Q                         { close-window; }
+    MOD+SHIFT+Q repeat=false            { close-window; }
 
     // Focus window (same monitor)
     MOD+K                               { focus-window-up; }
@@ -85,10 +85,10 @@ binds {
     MOD+SHIFT+RIGHT                     { move-column-right; }
 
     // Focus monitor
-    MOD+ALT+LEFT                        { focus-monitor-left; }
-    MOD+ALT+RIGHT                       { focus-monitor-right; }
-    MOD+ALT+H                           { focus-monitor-left; }
-    MOD+ALT+L                           { focus-monitor-right; }
+    MOD+SHIFT+CTRL+LEFT                 { focus-monitor-left; }
+    MOD+SHIFT+CTRL+RIGHT                { focus-monitor-right; }
+    MOD+SHIFT+CTRL+H                    { focus-monitor-left; }
+    MOD+SHIFT+CTRL+L                    { focus-monitor-right; }
 
     // Focus workspace (same monitor)
     MOD+ALT+UP                          { focus-workspace-up; }
@@ -167,7 +167,6 @@ binds {
     MOD+SHIFT+EQUAL                     { set-window-height "+10%"; }
 
     // ─── Screenshots ───
-    // TODO: add satty
     MOD+PRINT                           { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
     MOD+ALT+PRINT                       { screenshot; }
     MOD+SHIFT+PRINT                     { screenshot-screen; }
@@ -185,9 +184,16 @@ binds {
     XF86AudioPlay                       allow-when-locked=true { spawn-sh "playerctl play-pause"; }
     XF86AudioPrev                       allow-when-locked=true { spawn-sh "playerctl previous"; }
 
+    // Noctalia
+    MOD+ALT+L hotkey-overlay-title="Lock Screen" {
+      spawn-sh "noctalia-shell ipc call lockScreen lock";
+    }
+    MOD+E hotkey-overlay-title="Session Menu" {
+      spawn-sh "noctalia-shell ipc call sessionMenu toggle";
+    }
+
     // ─── Exit ───
-    MOD+SHIFT+E                         { quit; }
-    CTRL+ALT+DELETE                     { quit; } // Also quits Niri
+    CTRL+ALT+DELETE                     { quit; }
 }
 
 
@@ -197,9 +203,12 @@ binds {
     spawn-at-startup    "qs" "-c" "noctalia-shell"
     spawn-at-startup    "sunsetr"
 
-    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
+    // TODO: I won't need this after NixOS installation on desktop.
+    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &"
     spawn-sh-at-startup "awww-daemon" // Wallpaper daemon
-    spawn-sh-at-startup "awww img /home/trega/Pictures/Wallpapers/glitter-waves-dark.jpg" // Set wallpaper
+    spawn-sh-at-startup "awww img /home/trega/Pictures/Wallpapers/glitter-waves-dark.jpg"
+    // TODO: No idea why I have this for the laptop. Uncomment it after NixOS installation on desktop.
+    // spawn-sh-at-startup "xwayland-satellite"
 
     prefer-no-csd // Disable program decorations
     screenshot-path "~/Pictures/Screenshots/Screenshot_from_%Y-%m-%d_%H-%M-%S.png"

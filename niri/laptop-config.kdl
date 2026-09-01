@@ -59,7 +59,7 @@ binds {
     MOD+SHIFT+D                         hotkey-overlay-title="File Manager: thunar" { spawn-sh "thunar"; }
 
     // ─── Window, Workspace Movements and Focus ───
-    MOD+SHIFT+Q                         { close-window; }
+    MOD+SHIFT+Q repeat=false            { close-window; }
 
     // Focus window (same monitor)
     MOD+K                               { focus-window-up; }
@@ -82,10 +82,10 @@ binds {
     MOD+SHIFT+RIGHT                     { move-column-right; }
 
     // Focus monitor
-    MOD+ALT+LEFT                        { focus-monitor-left; }
-    MOD+ALT+RIGHT                       { focus-monitor-right; }
-    MOD+ALT+H                           { focus-monitor-left; }
-    MOD+ALT+L                           { focus-monitor-right; }
+    MOD+SHIFT+CTRL+LEFT                 { focus-monitor-left; }
+    MOD+SHIFT+CTRL+RIGHT                { focus-monitor-right; }
+    MOD+SHIFT+CTRL+H                    { focus-monitor-left; }
+    MOD+SHIFT+CTRL+L                    { focus-monitor-right; }
 
     // Focus workspace (same monitor)
     MOD+ALT+UP                          { focus-workspace-up; }
@@ -182,24 +182,20 @@ binds {
     XF86AudioPrev                       allow-when-locked=true { spawn-sh "playerctl previous"; }
 
     // Noctalia
-    MOD+SHIFT+X hotkey-overlay-title="Lock Screen" {
+    MOD+ALT+L hotkey-overlay-title="Lock Screen" {
       spawn-sh "noctalia msg session lock";
     }
-    MOD+ALT+Q hotkey-overlay-title="Session Menu" {
+    MOD+E hotkey-overlay-title="Session Menu" {
       spawn-sh "noctalia msg panel-toggle session";
     }
 
     // ─── Exit ───
-    MOD+SHIFT+E                         { quit; }
-    CTRL+ALT+DELETE                     { quit; } // Also quits Niri
+    CTRL+ALT+DELETE                     { quit; }
 }
 
 
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
-
-    // Apparently NixOS module provides niri-flake-polkit
-    // spawn-sh-at-startup "systemctl --user start polkit-gnome-authentication-agent-1"
 
     spawn-at-startup    "noctalia"
     spawn-at-startup    "sunsetr"
@@ -298,7 +294,7 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Window-Rules
 
     window-rule {
-        geometry-corner-radius 4 // Set every window radius to 20
+        geometry-corner-radius 4
         clip-to-geometry true
     }
 
