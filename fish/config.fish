@@ -4,12 +4,12 @@ set fish_greeting
 
 alias vim="nvim"
 alias cd='z'
-alias ls='eza --grid --color=always --group-directories-first --icons'   # grid listing
-alias ll='eza -l --color=always --group-directories-first --icons'       # long format
-alias la='eza -al --color=always --group-directories-first --icons'      # everything
-alias lt='eza -aTL 3 --color=always --group-directories-first --icons'   # tree deep 3
-alias lT='eza -aT --color=always --group-directories-first --icons'      # tree everything
-alias l.="eza -a | grep -e '^\.'"                                        # show only dotfiles
+alias ls='eza --icons'
+alias lsl='eza -l --header --color=always --icons'
+alias lsa='eza -al --header --color=always --icons'
+alias lsg='eza -l --header --git --git-repos-no-status --color=always --icons'
+alias lst='eza -T --header --color=always --icons'
+alias lsi='eza -l --header --git-ignore --color=always --icons'
 
 # Get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"

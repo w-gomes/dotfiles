@@ -1,9 +1,10 @@
 Remove-Item Alias:ls -Force
 
-function ls { eza --grid --color=always --group-directories-first $args }
-function ll { eza -l --grid --color=always --group-directories-first $args }
-function la { eza -al --grid --color=always --group-directories-first $args }
-function lt { eza -aTL 3 --color=always --group-directories-first $args }
-function lT { eza -aT --color=always --group-directories-first $args }
+function ls { eza $args }
+function lsl { eza -l --header --color=always $args }
+function lsa { eza -al --header --color=always $args }
+function lsg { eza -l --header --git --git-repos-no-status --color=always $args }
+function lst { eza -T --header --color=always $args }
+function lsi { eza -l --header --git-ignore --color=always $args }
 
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
