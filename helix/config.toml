@@ -3,6 +3,9 @@ theme = "kanso-zen"
 [editor]
 line-number = "relative"
 
+[editor.gutters]
+min-width = 1
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
