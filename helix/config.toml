@@ -3,8 +3,14 @@ theme = "kanso-zen"
 [editor]
 line-number = "relative"
 
-[editor.gutters]
+[editor.gutters.line-numbers]
 min-width = 1
+
+[editor.gutters]
+layout = ["line-numbers", "spacer"]
+
+[editor.lsp]
+enable = false
 
 [editor.cursor-shape]
 insert = "bar"
