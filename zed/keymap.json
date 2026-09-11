@@ -31,27 +31,21 @@
   {
     "context": "(Workspace && !Editor && !Terminal) || (Editor && VimControl)",
     "bindings": {
-      "space f b": "tab_switcher::ToggleAll", // Works like :ls
-      "space f f": "file_finder::Toggle",     // Finds files
-      "space f g": "text_finder::Toggle",     // Grep
-
-      "space f n": "workspace::NewFile",      // Creates new file
+      "space b": "tab_switcher::ToggleAll", // Works like :ls
+      "space f": "file_finder::Toggle",     // Finds files
+      "space g": "text_finder::Toggle",     // Grep
 
       // Splits panels right or down.
       "space m v": "pane::SplitAndMoveRight",
       "space m s": "pane::SplitAndMoveDown",
 
       // Clones a pane and move right or down.
-      "space v": "pane::SplitRight",
-      "space s": "pane::SplitDown",
+      "space w v": "pane::SplitRight",
+      "space w s": "pane::SplitDown",
 
       // Join panels
       "space j f": "pane::JoinIntoNext",
       "space j a": "pane::JoinAll",
-
-      // :w and :wa
-      "space w": "workspace::Save",
-      "space w a": "workspace::SaveAll",
     },
   },
 

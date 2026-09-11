@@ -106,9 +106,6 @@ let mapleader = "\<Space>"
 
 nnoremap Q <nop>
 
-map <leader>w :w<CR>
-map <leader>wa :wa<CR>
-
 map <F1> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 map <F2> :NERDTreeToggle<CR>
 map <F3> :NERDTreeFind<CR>
@@ -152,8 +149,8 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Make splitting Vim windows easier
-nnoremap <leader>s <C-W>s
-nnoremap <leader>v <C-W>v
+nnoremap <leader>ws <C-W>s
+nnoremap <leader>wv <C-W>v
 
 " space+y = yank to clipboard
 " space+p = paste to clipboard
@@ -177,11 +174,11 @@ nnoremap j gj
 nnoremap gj j
 
 " fuzzybox commands
-nnoremap <leader>ff :FuzzyFiles<CR>
-nnoremap <leader>fg :FuzzyGrep<CR>
-nnoremap <leader>fb :FuzzyBuffers<CR>
-nnoremap <leader>fh :FuzzyMru<CR>
-nnoremap <leader>fc :FuzzyCommands<CR>
+nnoremap <leader>f :FuzzyFiles<CR>
+nnoremap <leader>g :FuzzyGrep<CR>
+nnoremap <leader>b :FuzzyBuffers<CR>
+nnoremap <leader>h :FuzzyMru<CR>
+nnoremap <leader>c :FuzzyCommands<CR>
 
 
 
