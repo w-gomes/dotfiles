@@ -150,8 +150,6 @@ local map = vim.keymap.set
 
 map("n", "Q", "<nop>")
 map("n", "<space>", "<nop>")
-map("n", "<leader>w", "<cmd>w<cr>")
-map("n", "<leader>wa", "<cmd>wa<cr>")
 
 map("n", "<F1>", [[:%s/\s\+$//e<CR>:nohl<CR>]])
 map("n", "<F2>", ":NvimTreeToggle<CR>")
@@ -188,8 +186,8 @@ map("n", "<F7>", ":bfirst<CR>", { noremap = true, silent = true })
 map("n", "<F8>", ":blast<CR>", { noremap = true, silent = true })
 
 -- Split management
-map("n", "<leader>s", "<C-w>s", { noremap = true })
-map("n", "<leader>v", "<C-w>v", { noremap = true })
+map("n", "<leader>ws", "<C-w>s", { noremap = true })
+map("n", "<leader>wv", "<C-w>v", { noremap = true })
 
 -- Split navigation
 map("n", "<C-h>", "<C-w>h", { noremap = true })
