@@ -187,6 +187,3 @@ nnoremap <leader>c :FuzzyCommands<CR>
 
 " zig.vim
 let g:zig_fmt_autosave = 0
-
-" Fuzzybox
-let g:fuzzbox_preview = 0

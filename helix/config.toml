@@ -1,4 +1,4 @@
-theme = "kanso-zen"
+theme = "meliora"
 
 [editor]
 line-number = "relative"
@@ -8,9 +8,6 @@ min-width = 1
 
 [editor.gutters]
 layout = ["line-numbers", "spacer"]
-
-[editor.lsp]
-enable = false
 
 [editor.cursor-shape]
 insert = "bar"
