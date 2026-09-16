@@ -80,11 +80,11 @@
     "show": true,
   },
   "project_panel": {
+    "folder_indicator": "icon",
     "sticky_scroll": false,
     "show_diagnostics": "all",
     "button": true,
     "starts_open": false,
-    "folder_icons": true,
     "file_icons": false,
     "dock": "left",
   },

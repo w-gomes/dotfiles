@@ -98,6 +98,13 @@
   },
 
   {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "g w": "vim::HelixJumpToWord",
+    },
+  },
+
+  {
     "context": "(vim_mode == normal || vim_mode == visual) && !VimCount",
     "bindings": {
       "s": "vim::PushSneak",
