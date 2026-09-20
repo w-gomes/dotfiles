@@ -14,7 +14,6 @@
   "extend_comment_on_newline": false,
   "cli_default_open_behavior": "existing_window",
   "use_smartcase_search": true,
-  "server_url": "https://zed.dev",
   "semantic_tokens": "off",
   "which_key": {
     "delay_ms": 500,
