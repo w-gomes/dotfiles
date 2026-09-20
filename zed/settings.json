@@ -7,6 +7,10 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "which_key": {
+    "delay_ms": 500,
+    "enabled": true
+  },
   "buffer_line_height": "standard",
   "minimum_contrast_for_highlights": 0,
   "diagnostics_max_severity": "off",
@@ -65,7 +69,7 @@
   "jsx_tag_auto_close": {
     "enabled": false,
   },
-  "use_autoclose": false,
+  "use_autoclose": true,
   "buffer_font_weight": 400.0,
   "show_completions_on_input": false,
   "use_auto_surround": false,
