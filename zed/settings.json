@@ -7,9 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "drag_and_drop_selection": {
+    "enabled": false,
+  },
+  "code_lens": "off",
+  "extend_comment_on_newline": false,
+  "cli_default_open_behavior": "existing_window",
+  "use_smartcase_search": true,
+  "server_url": "https://zed.dev",
+  "semantic_tokens": "off",
   "which_key": {
     "delay_ms": 500,
-    "enabled": true
+    "enabled": true,
   },
   "buffer_line_height": "standard",
   "minimum_contrast_for_highlights": 0,
@@ -20,6 +29,7 @@
   },
   "gutter": {
     "runnables": false,
+    "folds": false,
   },
   "diagnostics": {
     "include_warnings": false,
@@ -34,9 +44,10 @@
   "zoomed_padding": true,
   "seed_search_query_from_cursor": "never",
   "show_wrap_guides": false,
-  "confirm_quit": false,
+  "confirm_quit": true,
   "selection_highlight": false,
-  "rounded_selection": true,
+  "rounded_selection": false,
+  "seed_search_query_from_cursor": "never",
   "current_line_highlight": "none",
   "agent_buffer_font_size": 14.0,
   "use_system_path_prompts": false,
@@ -132,8 +143,7 @@
     "button": true,
   },
   "status_bar": {
-    "active_language_button": true,
-    "cursor_position_button": true,
+    "show_active_file": true,
   },
   "collaboration_panel": {
     "dock": "left",
@@ -222,11 +232,6 @@
     "lsp": false,
   },
   "hide_mouse": "never",
-  "ui_font_family": "Hack Nerd Font Mono",
-  "buffer_font_family": "Hack Nerd Font Mono",
-  "buffer_font_features": {
-    "calt": false,
-  },
   "auto_update": false,
   "base_keymap": "VSCode",
   "telemetry": {
@@ -235,6 +240,7 @@
   },
   "vim_mode": true,
   "vim": {
+    "use_smartcase_find": true,
     "use_system_clipboard": "always",
     "highlight_on_yank_duration": 1500,
     "cursor_shape": {
@@ -244,10 +250,24 @@
       "visual": "block",
     },
   },
-  "icon_theme": "Catppuccin Mocha",
+  "ui_font_family": "Hack Nerd Font Mono",
+  "buffer_font_family": "Hack Nerd Font Mono",
+  "buffer_font_features": {
+    "calt": false,
+  },
   "ui_font_size": 14.0,
   "buffer_font_size": 15.0,
+  "icon_theme": "Catppuccin Mocha",
   "theme": "Kanso Zen (Borderless + No italics)",
+  "theme_overrides": {
+    "Kanso Zen (Borderless + No italics)": {
+      "editor.document_highlight.read_background": "#00000000",
+      "editor.document_highlight.write_background": "#00000000",
+      "editor.document_highlight.bracket_background": "#3e445170",
+      "search.match_background": "#8ba4b033",
+      "search.active_match_background": "#c4b28a88",
+    },
+  },
   "file_scan_exclusions": [
     "**/moc_*.cpp",
     "**/moc_*.h",
@@ -262,6 +282,7 @@
     "**/.exe",
     "**/.zip",
     "**/.git",
+    "**/.jj",
     "**/.svn",
     "**/.hg",
     "**/CVS",
