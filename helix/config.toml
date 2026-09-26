@@ -2,6 +2,8 @@ theme = "meliora"
 
 [editor]
 line-number = "relative"
+scrolloff = 2
+bufferline = "always"
 
 [editor.gutters.line-numbers]
 min-width = 1
