@@ -31,9 +31,10 @@
   {
     "context": "(Workspace && !Editor && !Terminal) || (Editor && VimControl)",
     "bindings": {
+      "space": null,
       "space b": "tab_switcher::ToggleAll", // Works like :ls
-      "space f": "file_finder::Toggle",     // Finds files
-      "space g": "text_finder::Toggle",     // Grep
+      "space f": "file_finder::Toggle", // Finds files
+      "space g": "text_finder::Toggle", // Grep
 
       // Splits panels right or down.
       "space m v": "pane::SplitAndMoveRight",
@@ -46,6 +47,9 @@
       // Join panels
       "space j f": "pane::JoinIntoNext",
       "space j a": "pane::JoinAll",
+
+      // Global search
+      "space f g": "workspace::NewSearch",
     },
   },
 
@@ -66,7 +70,7 @@
   {
     "context": "EmptyPane || SharedScreen",
     "bindings": {
-      "f1": "projects::OpenRecent",
+      "f1": ["projects::OpenRecent", { "create_new_window": false }],
       "f2": "workspace::ToggleLeftDock",
       "f3": "file_finder::Toggle",
     },
@@ -98,17 +102,10 @@
   },
 
   {
-    "context": "VimControl && !menu",
-    "bindings": {
-      "g w": "vim::HelixJumpToWord",
-    },
-  },
-
-  {
     "context": "(vim_mode == normal || vim_mode == visual) && !VimCount",
     "bindings": {
-      "s": "vim::PushSneak",
-      "shift-s": "vim::PushSneakBackward",
+      "g w": "vim::HelixJumpToWord",
+      "s": "vim::HelixJumpToWord",
     },
   },
 
@@ -138,6 +135,19 @@
     "bindings": {
       "j k": "vim::NormalBefore",
       "k j": "vim::NormalBefore",
+    },
+  },
+
+  {
+    "context": "ProjectSearchBar",
+    "bindings": {
+      "escape": "project_search::ToggleFocus",
+    },
+  },
+  {
+    "context": "ProjectSearchView",
+    "bindings": {
+      "escape": "project_search::ToggleFocus",
     },
   },
 ]

@@ -16,7 +16,7 @@
   "use_smartcase_search": true,
   "semantic_tokens": "off",
   "which_key": {
-    "delay_ms": 500,
+    "delay_ms": 200,
     "enabled": true,
   },
   "buffer_line_height": "standard",
