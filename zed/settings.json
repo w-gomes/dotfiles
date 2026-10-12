@@ -73,7 +73,6 @@
   "inlay_hints": {
     "enabled": false,
   },
-  "show_completion_documentation": false,
   "show_whitespaces": "trailing",
   "show_edit_predictions": false,
   "jsx_tag_auto_close": {
@@ -81,7 +80,8 @@
   },
   "use_autoclose": true,
   "buffer_font_weight": 400.0,
-  "show_completions_on_input": false,
+  "show_completions_on_input": true,
+  "show_completion_documentation": false,
   "use_auto_surround": false,
   "tabs": {
     "show_diagnostics": "all",
@@ -211,8 +211,12 @@
         "check": {
           "command": "clippy",
           "workspace": false,
+          "feature": false,
         },
-        "cargo": { "allTargets": false },
+        "cargo": {
+          "allTargets": false,
+          "targetDir": true,
+        },
       },
     },
     "ruff": {
@@ -228,7 +232,7 @@
   },
 
   "completions": {
-    "lsp": false,
+    "lsp": true,
   },
   "hide_mouse": "never",
   "auto_update": false,

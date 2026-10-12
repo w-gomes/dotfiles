@@ -14,4 +14,3 @@ layout = ["line-numbers", "spacer"]
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-

@@ -1,0 +1,17 @@
+[[language]]
+name = "python"
+language-servers = ["ty", "ruff"]
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+check.workspace = false
+check.feature = false
+cargo.allTargets = false
+cargo.targetDir = true
+
+[language-server.clangd.config]
+binary.arguments = ["--compile-commands-dir=./build/clang/"]
+
+[language-server.ruff.config]
+settings.lint.select = ["E", "F", "I"]
+settings.lint.organizeImports = true
