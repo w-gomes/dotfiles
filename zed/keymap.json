@@ -50,6 +50,9 @@
 
       // Global search
       "space f g": "workspace::NewSearch",
+
+      // Alternate between the last and the current buffers.
+      "space space": "pane::AlternateFile",
     },
   },
 
