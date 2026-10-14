@@ -269,6 +269,7 @@
       "editor.document_highlight.bracket_background": "#3e445170",
       "search.match_background": "#8ba4b033",
       "search.active_match_background": "#c4b28a88",
+      "vim.yank.background": "#c4b28a55",
     },
   },
   "file_scan_exclusions": [
