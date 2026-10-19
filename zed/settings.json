@@ -209,7 +209,6 @@
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy",
           "workspace": false,
           "feature": false,
         },

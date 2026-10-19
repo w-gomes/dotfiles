@@ -3,7 +3,6 @@ name = "python"
 language-servers = ["ty", "ruff"]
 
 [language-server.rust-analyzer.config]
-check.command = "clippy"
 check.workspace = false
 check.feature = false
 cargo.allTargets = false
