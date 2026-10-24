@@ -1,21 +1,20 @@
 [core]
     editor = "vim"
 [alias]
-    s = status --short
-    st = status
+    st = status --short
+    sts = status
+    ap = add --patch
+    up = add --update
+    track = add -N
     cv = commit --verbose
     cm = commit -m
-    co = checkout
-    br = branch
+    sw = switch
     df = diff
-    dh = diff HEAD
-    ds = diff --stat
-    ll = log --oneline --decorate
-    lf = log --pretty=oneline --decorate
-    lg = log --graph --oneline --decorate
-    ap = add --patch
-    track = add -N
-    all = add -A
-    up = add --update
+    dfh = diff HEAD
+    dfsg = diff --staged
+    dfst = diff --stat
+    lp = log -p
+    ls = log --pretty=oneline
+    lg = log --graph
 [pull]
     ff = only
